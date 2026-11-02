@@ -1,0 +1,3624 @@
+{
+  "summary": {
+    "n": 150,
+    "json_valid": 1.0,
+    "field_accuracy": {
+      "category": 0.86,
+      "sentiment": 0.82,
+      "escalate": 0.9666666666666667,
+      "order_id": 1.0,
+      "product": 1.0,
+      "amount": 1.0
+    },
+    "macro_f1": {
+      "category": 0.76,
+      "sentiment": 0.8096357226792008,
+      "escalate": 0.9263188918361331
+    },
+    "all_fields_correct": 0.6466666666666666,
+    "tag": "lora",
+    "adapter": "lora-out"
+  },
+  "details": [
+    {
+      "id": "t000",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2008\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t001",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2021\", \"product\": null, \"amount\": 129}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2021",
+          "product": null,
+          "amount": 129
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2021",
+          "product": null,
+          "amount": 129
+        }
+      }
+    },
+    {
+      "id": "t002",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2008\", \"product\": \"空气炸锅\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": "空气炸锅",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": "空气炸锅",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t003",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2005\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2005",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2005",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t004",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2001\", \"product\": \"洗发水\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": "洗发水",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": "洗发水",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t005",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2025\", \"product\": \"无线降噪耳机\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2025",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2025",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t006",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2023\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t007",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2030\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t008",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2007\", \"product\": null, \"amount\": 5299}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2007",
+          "product": null,
+          "amount": 5299
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2007",
+          "product": null,
+          "amount": 5299
+        }
+      }
+    },
+    {
+      "id": "t009",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2017\", \"product\": \"电饭煲\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": "电饭煲",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": "电饭煲",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t010",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2019\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2019",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2019",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t011",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2023\", \"product\": \"笔记本电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t012",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2021\", \"product\": \"电饭煲\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2021",
+          "product": "电饭煲",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2021",
+          "product": "电饭煲",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t013",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2016\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t014",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2003\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2003",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2003",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t015",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2014\", \"product\": null, \"amount\": 129}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2014",
+          "product": null,
+          "amount": 129
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2014",
+          "product": null,
+          "amount": 129
+        }
+      }
+    },
+    {
+      "id": "t016",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2002\", \"product\": \"咖啡机\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2002",
+          "product": "咖啡机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2002",
+          "product": "咖啡机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t017",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2008\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t018",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2018\", \"product\": \"无线降噪耳机\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t019",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2005\", \"product\": \"车厘子\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2005",
+          "product": "车厘子",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2005",
+          "product": "车厘子",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t020",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2029\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2029",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2029",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t021",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2021\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2021",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2021",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t022",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2014\", \"product\": null, \"amount\": 259}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2014",
+          "product": null,
+          "amount": 259
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2014",
+          "product": null,
+          "amount": 259
+        }
+      }
+    },
+    {
+      "id": "t023",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2010\", \"product\": \"运动鞋\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": "运动鞋",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": "运动鞋",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t024",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2001\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t025",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2011\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t026",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2024\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2024",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2024",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t027",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2009\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t028",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2006\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t029",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2010\", \"product\": null, \"amount\": 999}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2010",
+          "product": null,
+          "amount": 999
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2010",
+          "product": null,
+          "amount": 999
+        }
+      }
+    },
+    {
+      "id": "t030",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2024\", \"product\": \"笔记本电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2024",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2024",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t031",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2011\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t032",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2004\", \"product\": \"羽绒服\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2004",
+          "product": "羽绒服",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2004",
+          "product": "羽绒服",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t033",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2026\", \"product\": \"电饭煲\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2026",
+          "product": "电饭煲",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2026",
+          "product": "电饭煲",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t034",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2007\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t035",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2017\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t036",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2027\", \"product\": null, \"amount\": 129}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": 129
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": 129
+        }
+      }
+    },
+    {
+      "id": "t037",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2010\", \"product\": \"运动鞋\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": "运动鞋",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": "运动鞋",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t038",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2010\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t039",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2007\", \"product\": \"无线降噪耳机\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t040",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2002\", \"product\": \"车厘子\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2002",
+          "product": "车厘子",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2002",
+          "product": "车厘子",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t041",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2028\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2028",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2028",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t042",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2002\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2002",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2002",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t043",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2001\", \"product\": null, \"amount\": 129}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": null,
+          "amount": 129
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2001",
+          "product": null,
+          "amount": 129
+        }
+      }
+    },
+    {
+      "id": "t044",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2022\", \"product\": \"无线降噪耳机\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t045",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2011\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t046",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2007\", \"product\": \"机械键盘\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": "机械键盘",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": "机械键盘",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t047",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2009\", \"product\": \"空调\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": "空调",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": "空调",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t048",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2028\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2028",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2028",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t049",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2017\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t050",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2027\", \"product\": null, \"amount\": 99}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": 99
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": 99
+        }
+      }
+    },
+    {
+      "id": "t051",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2003\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2003",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2003",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t052",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2011\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t053",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2013\", \"product\": \"羽绒服\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2013",
+          "product": "羽绒服",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2013",
+          "product": "羽绒服",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t054",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2014\", \"product\": \"机械键盘\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2014",
+          "product": "机械键盘",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2014",
+          "product": "机械键盘",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t055",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2026\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2026",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2026",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t056",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2020\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2020",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2020",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t057",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2029\", \"product\": null, \"amount\": 99}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2029",
+          "product": null,
+          "amount": 99
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2029",
+          "product": null,
+          "amount": 99
+        }
+      }
+    },
+    {
+      "id": "t058",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2023\", \"product\": \"人体工学椅\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "人体工学椅",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "人体工学椅",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t059",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2007\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t060",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2005\", \"product\": \"无线降噪耳机\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2005",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2005",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t061",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2015\", \"product\": \"车厘子\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2015",
+          "product": "车厘子",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2015",
+          "product": "车厘子",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t062",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2011\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t063",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2016\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t064",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2019\", \"product\": null, \"amount\": 5299}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2019",
+          "product": null,
+          "amount": 5299
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2019",
+          "product": null,
+          "amount": 5299
+        }
+      }
+    },
+    {
+      "id": "t065",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2027\", \"product\": \"电饭煲\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": "电饭煲",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": "电饭煲",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t066",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2027\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t067",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2019\", \"product\": \"运动鞋\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2019",
+          "product": "运动鞋",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2019",
+          "product": "运动鞋",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t068",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2004\", \"product\": \"运动鞋\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2004",
+          "product": "运动鞋",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2004",
+          "product": "运动鞋",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t069",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2003\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2003",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2003",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t070",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2025\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2025",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2025",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t071",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2018\", \"product\": null, \"amount\": 129}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": null,
+          "amount": 129
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2018",
+          "product": null,
+          "amount": 129
+        }
+      }
+    },
+    {
+      "id": "t072",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2027\", \"product\": \"车厘子\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": "车厘子",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": "车厘子",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t073",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2019\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2019",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2019",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t074",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2029\", \"product\": \"笔记本电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2029",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2029",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t075",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2030\", \"product\": \"车厘子\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": "车厘子",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": "车厘子",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t076",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2006\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t077",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2011\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t078",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2014\", \"product\": null, \"amount\": 2599}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2014",
+          "product": null,
+          "amount": 2599
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2014",
+          "product": null,
+          "amount": 2599
+        }
+      }
+    },
+    {
+      "id": "t079",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2009\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t080",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2008\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t081",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2023\", \"product\": \"羽绒服\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "羽绒服",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "羽绒服",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t082",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2001\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t083",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2030\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t084",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2029\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2029",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2029",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t085",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2022\", \"product\": null, \"amount\": 99}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2022",
+          "product": null,
+          "amount": 99
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2022",
+          "product": null,
+          "amount": 99
+        }
+      }
+    },
+    {
+      "id": "t086",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2006\", \"product\": \"咖啡机\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": "咖啡机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": "咖啡机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t087",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2027\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t088",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2022\", \"product\": \"人体工学椅\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "人体工学椅",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "人体工学椅",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t089",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2013\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2013",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2013",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t090",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2016\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t091",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2022\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t092",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2017\", \"product\": null, \"amount\": 699}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2017",
+          "product": null,
+          "amount": 699
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2017",
+          "product": null,
+          "amount": 699
+        }
+      }
+    },
+    {
+      "id": "t093",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2022\", \"product\": \"洗发水\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "洗发水",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "洗发水",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t094",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2019\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2019",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2019",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t095",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2012\", \"product\": \"无线降噪耳机\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2012",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2012",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t096",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2021\", \"product\": \"笔记本电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2021",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2021",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t097",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2004\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2004",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2004",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t098",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2020\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2020",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2020",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t099",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2016\", \"product\": null, \"amount\": 199}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": null,
+          "amount": 199
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2016",
+          "product": null,
+          "amount": 199
+        }
+      }
+    },
+    {
+      "id": "t100",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2025\", \"product\": \"运动鞋\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2025",
+          "product": "运动鞋",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2025",
+          "product": "运动鞋",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t101",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2009\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t102",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2009\", \"product\": \"空气炸锅\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": "空气炸锅",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": "空气炸锅",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t103",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2018\", \"product\": \"空调\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": "空调",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": "空调",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t104",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2009\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2009",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t105",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2006\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t106",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2027\", \"product\": null, \"amount\": 199}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": 199
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2027",
+          "product": null,
+          "amount": 199
+        }
+      }
+    },
+    {
+      "id": "t107",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2017\", \"product\": \"笔记本电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t108",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2026\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2026",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2026",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t109",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2018\", \"product\": \"羽绒服\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": "羽绒服",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": "羽绒服",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t110",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2010\", \"product\": \"电饭煲\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": "电饭煲",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": "电饭煲",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t111",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2024\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2024",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2024",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t112",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2006\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t113",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2017\", \"product\": null, \"amount\": 99}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2017",
+          "product": null,
+          "amount": 99
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2017",
+          "product": null,
+          "amount": 99
+        }
+      }
+    },
+    {
+      "id": "t114",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2022\", \"product\": \"笔记本电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t115",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2001\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t116",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2018\", \"product\": \"无线降噪耳机\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2018",
+          "product": "无线降噪耳机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t117",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2023\", \"product\": \"笔记本电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "笔记本电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t118",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2011\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t119",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2025\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2025",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2025",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t120",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2003\", \"product\": null, \"amount\": 259}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2003",
+          "product": null,
+          "amount": 259
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2003",
+          "product": null,
+          "amount": 259
+        }
+      }
+    },
+    {
+      "id": "t121",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2023\", \"product\": \"机械键盘\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "机械键盘",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2023",
+          "product": "机械键盘",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t122",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2010\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2010",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t123",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2006\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t124",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2017\", \"product\": \"人体工学椅\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": "人体工学椅",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2017",
+          "product": "人体工学椅",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t125",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2007\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2007",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t126",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2006\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t127",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2006\", \"product\": null, \"amount\": 99}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": 99
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2006",
+          "product": null,
+          "amount": 99
+        }
+      }
+    },
+    {
+      "id": "t128",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2015\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2015",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2015",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t129",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2011\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t130",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2013\", \"product\": \"平板电脑\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2013",
+          "product": "平板电脑",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2013",
+          "product": "平板电脑",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t131",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2016\", \"product\": \"空气炸锅\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": "空气炸锅",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": "空气炸锅",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t132",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2030\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t133",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2026\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2026",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2026",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t134",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2001\", \"product\": null, \"amount\": 699}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2001",
+          "product": null,
+          "amount": 699
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2001",
+          "product": null,
+          "amount": 699
+        }
+      }
+    },
+    {
+      "id": "t135",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2022\", \"product\": \"咖啡机\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "咖啡机",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": "咖啡机",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t136",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2003\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2003",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2003",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t137",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2021\", \"product\": \"运动鞋\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2021",
+          "product": "运动鞋",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2021",
+          "product": "运动鞋",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t138",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2016\", \"product\": \"人体工学椅\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": "人体工学椅",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2016",
+          "product": "人体工学椅",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t139",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2020\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2020",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2020",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t140",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2014\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2014",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2014",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t141",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2022\", \"product\": null, \"amount\": 999}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2022",
+          "product": null,
+          "amount": 999
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2022",
+          "product": null,
+          "amount": 999
+        }
+      }
+    },
+    {
+      "id": "t142",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2027\", \"product\": \"运动鞋\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": "运动鞋",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2027",
+          "product": "运动鞋",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t143",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2008\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "发票",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2008",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t144",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2024\", \"product\": \"空调\", \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2024",
+          "product": "空调",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2024",
+          "product": "空调",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t145",
+      "raw": "{\"category\": \"物流\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2006\", \"product\": \"车厘子\", \"amount\": null}}",
+      "pred": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": "车厘子",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "物流",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2006",
+          "product": "车厘子",
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t146",
+      "raw": "{\"category\": \"咨询\", \"sentiment\": \"中性\", \"escalate\": false, \"entities\": {\"order_id\": \"A2022\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "咨询",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2022",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t147",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2029\", \"product\": null, \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2029",
+          "product": null,
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2029",
+          "product": null,
+          "amount": null
+        }
+      }
+    },
+    {
+      "id": "t148",
+      "raw": "{\"category\": \"退款\", \"sentiment\": \"负面\", \"escalate\": true, \"entities\": {\"order_id\": \"A2011\", \"product\": null, \"amount\": 99}}",
+      "pred": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": 99
+        }
+      },
+      "gold": {
+        "category": "退款",
+        "sentiment": "负面",
+        "escalate": true,
+        "entities": {
+          "order_id": "A2011",
+          "product": null,
+          "amount": 99
+        }
+      }
+    },
+    {
+      "id": "t149",
+      "raw": "{\"category\": \"退货\", \"sentiment\": \"负面\", \"escalate\": false, \"entities\": {\"order_id\": \"A2030\", \"product\": \"机械键盘\", \"amount\": null}}",
+      "pred": {
+        "category": "退货",
+        "sentiment": "负面",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": "机械键盘",
+          "amount": null
+        }
+      },
+      "gold": {
+        "category": "退货",
+        "sentiment": "中性",
+        "escalate": false,
+        "entities": {
+          "order_id": "A2030",
+          "product": "机械键盘",
+          "amount": null
+        }
+      }
+    }
+  ]
+}
